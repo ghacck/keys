@@ -29,3 +29,10 @@ if len(sys.argv) == 3:
     with open(output, "w+", encoding="utf-8") as out:
         pairs = getPairs(input)
         out.write(str(pairs))
+
+with open(file, "r+", encoding="utf-8") as scrip:
+    scripText = scrip.read()
+    inp = sys.argv[1]
+    outp = sys.argv[2]
+    with open(outp, "w+", encoding="utf-8") as outpu:
+        outpu.write(scripText)
