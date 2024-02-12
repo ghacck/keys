@@ -32,7 +32,7 @@ if len(sys.argv) == 3:
 
 inp = sys.argv[1]
 outp = sys.argv[2]
-with open(file, "r+", encoding="utf-8") as scrip:
+with open(inp, "r+", encoding="utf-8") as scrip:
     scripText = scrip.read()
     with open(outp, "w+", encoding="utf-8") as outpu:
         outpu.write(scripText)
