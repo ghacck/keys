@@ -72,7 +72,7 @@ jobs:
       actions: write
     needs: update
     # Always run, except when manually cancelled.
-    if: success() || failure()
+    if: success()
     runs-on: ubuntu-latest
     steps:
       - name: Re-trigger workflow
