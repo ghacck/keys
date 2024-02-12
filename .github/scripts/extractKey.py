@@ -31,8 +31,8 @@ if len(sys.argv) == 3:
         out.write(str(pairs))
 
 inp = sys.argv[1]
-outp = "clean.js"
+outp = sys.argv[2]
 with open(inp, "r+", encoding="utf-8") as scrip:
     scripText = scrip.read()
-    with open(outp, "w+", encoding="utf-8") as outpu:
+    with open(outp, "a+", encoding="utf-8") as outpu:
         outpu.write(scripText)
